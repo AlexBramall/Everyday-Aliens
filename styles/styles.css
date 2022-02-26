@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #FFDF6F;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+}
+
+nav {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: -5px 5px 0px 0px #000;
+}
+
+.nav-links li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 15px;
+    cursor: pointer;
+    justify-content: center;
+    font-family: 'Kulim Park',
+        sans-serif;
+    font-weight: bold;
+
+}
+
+.logo {
+    height: 80px;
+    cursor: pointer;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+}
