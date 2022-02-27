@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kulim Park', sans-serif;
+}
+
+
+body {
+    background-color: #FFDF6F;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+}
+
+button {
+    padding: 10px 15px;
+    border: 0;
+    background-color: white;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: -5px 5px 0px 0px #000;
+    transition: 0.3s;
+    &:hover {
+        transform: translateY(-5px);
+    transition: 0.3s;
+    box-shadow: -7px 12px 0px 0px #000;
+    }
+}
+
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: -5px 5px 0px 0px #000;
+}
+
+.nav-links li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 15px;
+    cursor: pointer;
+    justify-content: center;
+    font-family: 'Kulim Park',
+        sans-serif;
+    font-weight: bold;
+    transition: 0.3s;
+
+}
+.nav-links li:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+.nav-discord {
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & #nav-discord-img {
+        transition: 0.3s;
+    }
+    & #nav-discord-button {
+        background-color: white;
+        padding: 10px 25px 10px 15px;
+        border-radius: 4px;
+        margin-right: -20px;
+        box-shadow: -5px 5px 0px 0px #000;
+        transition: 0.3s;
+        font-weight: bold;
+        &:hover {
+            transition: 0.3s;
+            transform: translateY(-5px);
+            box-shadow: -7px 12px 0px 0px #000;
+            & + #nav-discord-img {
+                transition: 0.3s;
+                transform: translateY(-5px);
+            }
+        }
+    }
+}
+
+.logo {
+    height: 70px;
+    cursor: pointer;
+}
+
+.hero-container {
+    height: 87vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social-buttons {
+    display: flex;
+    justify-content: center;
+}
+#twitter-button, #discord-button {
+    margin: 0 10px;
+}
+#twitter-button {
+    background-color: #7BBCFF;
+}
+#discord-button {
+    background-color: #B47BFF;
+}
