@@ -1,47 +1,169 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Kulim Park', sans-serif;
 }
 
 body {
-    background-color: #FFDF6F;
+  background-color: #FFDF6F;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 10%;
+}
+
+button {
+  padding: 10px 15px;
+  border: 0;
+  background-color: white;
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-box-shadow: -5px 5px 0px 0px #000;
+          box-shadow: -5px 5px 0px 0px #000;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+button:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: -7px 12px 0px 0px #000;
+          box-shadow: -7px 12px 0px 0px #000;
 }
 
 nav {
-    background-color: #fff;
-    border-radius: 4px;
-    box-shadow: -5px 5px 0px 0px #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: #fff;
+  border-radius: 4px;
+  -webkit-box-shadow: -5px 5px 0px 0px #000;
+          box-shadow: -5px 5px 0px 0px #000;
 }
 
 .nav-links li {
-    list-style: none;
-    display: inline-block;
-    padding: 10px 15px;
-    cursor: pointer;
-    justify-content: center;
-    font-family: 'Kulim Park',
-        sans-serif;
-    font-weight: bold;
+  list-style: none;
+  display: inline-block;
+  padding: 10px 15px;
+  cursor: pointer;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Kulim Park', sans-serif;
+  font-weight: bold;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
 
+.nav-links li:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.nav-discord {
+  cursor: pointer;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-discord #nav-discord-img {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.nav-discord #nav-discord-button {
+  background-color: white;
+  padding: 10px 25px 10px 15px;
+  border-radius: 4px;
+  margin-right: -20px;
+  -webkit-box-shadow: -5px 5px 0px 0px #000;
+          box-shadow: -5px 5px 0px 0px #000;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.nav-discord #nav-discord-button:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-box-shadow: -7px 12px 0px 0px #000;
+          box-shadow: -7px 12px 0px 0px #000;
+}
+
+.nav-discord #nav-discord-button:hover + #nav-discord-img {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 .logo {
-    height: 80px;
-    cursor: pointer;
+  height: 70px;
+  cursor: pointer;
 }
 
 .hero-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: fit-content;
+  height: 87vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
+.social-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#twitter-button, #discord-button {
+  margin: 0 10px;
+}
+
+#twitter-button {
+  background-color: #7BBCFF;
+}
+
+#discord-button {
+  background-color: #B47BFF;
+}
+/*# sourceMappingURL=styles.css.map */
