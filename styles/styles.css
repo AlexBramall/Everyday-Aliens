@@ -322,5 +322,11 @@ footer p {
 }
 
 .footer-social-links {
+  cursor: pointer;
   font-size: 2.5rem;
+}
+
+.fa-brands {
+  color: black;
+  padding: 0 5px;
 }
