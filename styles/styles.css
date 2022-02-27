@@ -8,6 +8,7 @@
 
 body {
   background-color: #FFDF6F;
+
 }
 
 header {
@@ -304,8 +305,50 @@ nav {
 /*# sourceMappingURL=styles.css.map */
 
 
+
+
+/* BEGIN COLLABERATION SECTION */
+
+.collab-container {
+  background-color: #FF6D6D;
+  padding: 100px 0px 100px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-top: 7px solid black;
+  border-bottom: 7px solid black;
+  transform: rotate(-2deg);
+  overflow: hidden;
+}
+
+
+
+.collab-title {
+  transform: rotate(2deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  font-size: 3rem;
+  color: #fff;
+}
+
+.collab-text {
+  font-size: 1rem;
+  padding: 5px 0 25px 0;
+  transform: rotate(2deg);
+}
+
+.send-transmission {
+  transform: rotate(2deg);
+}
+
+
+/* BEGIN FOOTER */
 footer {
-  padding: 0 0 2rem;
+  padding: 2rem 0 2rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -330,3 +373,5 @@ footer p {
   color: black;
   padding: 0 5px;
 }
+
+/* END FOOTER */
