@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: 'Kulim Park', sans-serif;
 }
 
@@ -15,11 +15,11 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 20px 10%;
   z-index: 6;
 }
@@ -33,18 +33,18 @@ button {
   font-weight: bold;
   cursor: pointer;
   -webkit-box-shadow: -5px 5px 0px 0px #000;
-          box-shadow: -5px 5px 0px 0px #000;
+  box-shadow: -5px 5px 0px 0px #000;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 button:hover {
   -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
+  transform: translateY(-5px);
   -webkit-transition: 0.3s;
   transition: 0.3s;
   -webkit-box-shadow: -7px 12px 0px 0px #000;
-          box-shadow: -7px 12px 0px 0px #000;
+  box-shadow: -7px 12px 0px 0px #000;
 }
 
 nav {
@@ -52,12 +52,12 @@ nav {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   background-color: #fff;
   border-radius: 4px;
   -webkit-box-shadow: -5px 5px 0px 0px #000;
-          box-shadow: -5px 5px 0px 0px #000;
+  box-shadow: -5px 5px 0px 0px #000;
   z-index: 6;
 }
 
@@ -67,9 +67,10 @@ nav {
   padding: 10px 15px;
   cursor: pointer;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-family: 'Kulim Park', sans-serif;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: 'Kulim Park',
+    sans-serif;
   font-weight: bold;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -78,7 +79,7 @@ nav {
 
 .nav-links li:hover {
   -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
+  transform: translateY(-5px);
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -95,11 +96,11 @@ nav {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-size: 20px;
 }
 
@@ -114,7 +115,7 @@ nav {
   border-radius: 4px;
   margin-right: -20px;
   -webkit-box-shadow: -5px 5px 0px 0px #000;
-          box-shadow: -5px 5px 0px 0px #000;
+  box-shadow: -5px 5px 0px 0px #000;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   font-weight: bold;
@@ -124,16 +125,16 @@ nav {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
+  transform: translateY(-5px);
   -webkit-box-shadow: -7px 12px 0px 0px #000;
-          box-shadow: -7px 12px 0px 0px #000;
+  box-shadow: -7px 12px 0px 0px #000;
 }
 
-.nav-discord #nav-discord-button:hover + #nav-discord-img {
+.nav-discord #nav-discord-button:hover+#nav-discord-img {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .logo {
@@ -153,14 +154,14 @@ nav {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-top: -113.9px;
   overflow: hidden !important;
 }
@@ -189,13 +190,13 @@ nav {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   overflow: hidden !important;
 }
 
@@ -207,7 +208,7 @@ nav {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-wrap: nowrap;
 }
 
 .hero-image-carousel .carousel-row img {
@@ -218,54 +219,59 @@ nav {
 @-webkit-keyframes right {
   from {
     -webkit-transform: translateX(100px);
-            transform: translateX(100px);
+    transform: translateX(100px);
   }
+
   to {
     -webkit-transform: translateX(-100px);
-            transform: translateX(-100px);
+    transform: translateX(-100px);
   }
 }
+
 @keyframes right {
   from {
     -webkit-transform: translateX(100px);
-            transform: translateX(100px);
+    transform: translateX(100px);
   }
+
   to {
     -webkit-transform: translateX(-100px);
-            transform: translateX(-100px);
+    transform: translateX(-100px);
   }
 }
 
 .right {
   -webkit-animation: right 8s infinite linear;
-          animation: right 8s infinite linear;
+  animation: right 8s infinite linear;
 }
 
 @-webkit-keyframes left {
   from {
     -webkit-transform: translateX(-100px);
-            transform: translateX(-100px);
+    transform: translateX(-100px);
   }
+
   to {
     -webkit-transform: translateX(100px);
-            transform: translateX(100px);
+    transform: translateX(100px);
   }
 }
 
 @keyframes left {
   from {
     -webkit-transform: translateX(-100px);
-            transform: translateX(-100px);
+    transform: translateX(-100px);
   }
+
   to {
     -webkit-transform: translateX(100px);
-            transform: translateX(100px);
+    transform: translateX(100px);
   }
 }
 
 .left {
   -webkit-animation: left 8s infinite linear;
-          animation: left 8s infinite linear;
+  animation: left 8s infinite linear;
 }
 
 .social-buttons {
@@ -273,11 +279,12 @@ nav {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
-#twitter-button, #discord-button {
+#twitter-button,
+#discord-button {
   margin: 0 10px;
 }
 
@@ -293,4 +300,33 @@ nav {
   height: 800px;
   width: 100%;
 }
+
 /*# sourceMappingURL=styles.css.map */
+
+
+footer {
+  padding: 0 0 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+footer p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.footer-logo-icon {
+  height: 3.75rem;
+}
+
+.footer-social-links {
+  cursor: pointer;
+  font-size: 2.5rem;
+}
+
+.fa-brands {
+  color: black;
+  padding: 0 5px;
+}
