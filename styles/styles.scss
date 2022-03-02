@@ -357,9 +357,9 @@ nav {
     border: 9px solid black;
     border-radius: 15px;
     & .rank-card-img {
-      width: 300px;
+      width: 250px;
       min-width: 200px;
-      min-height: 300px;
+      min-height: 250px;
       background-image: url(/images/characters/10.png);
       background-size: cover;
       background-position: center;
@@ -376,12 +376,12 @@ nav {
     max-width: 500px;
     align-self: center;
     & h3 {
-      font-size: 2em;
+      font-size: 1.7em;
       padding: 0;
       margin-bottom: -7px ;
     }
     & h1 {
-      font-size: 3em;
+      font-size: 2.6em;
       margin-bottom: 10px;
     }
     & p {
