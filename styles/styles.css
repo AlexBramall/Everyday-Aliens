@@ -228,22 +228,22 @@ nav {
 /* background animating kind of,... */
 @-webkit-keyframes right {
   from {
-    -webkit-transform: translateX(100px);
-            transform: translateX(100px);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   to {
-    -webkit-transform: translateX(-100px);
-            transform: translateX(-100px);
+    -webkit-transform: translateX(-33.4vh);
+            transform: translateX(-33.4vh);
   }
 }
 @keyframes right {
   from {
-    -webkit-transform: translateX(100px);
-            transform: translateX(100px);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   to {
-    -webkit-transform: translateX(-100px);
-            transform: translateX(-100px);
+    -webkit-transform: translateX(-33.4vh);
+            transform: translateX(-33.4vh);
   }
 }
 
@@ -254,23 +254,23 @@ nav {
 
 @-webkit-keyframes left {
   from {
-    -webkit-transform: translateX(-100px);
-            transform: translateX(-100px);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   to {
-    -webkit-transform: translateX(100px);
-            transform: translateX(100px);
+    -webkit-transform: translateX(33.4vh);
+            transform: translateX(33.4vh);
   }
 }
 
 @keyframes left {
   from {
-    -webkit-transform: translateX(-100px);
-            transform: translateX(-100px);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   to {
-    -webkit-transform: translateX(100px);
-            transform: translateX(100px);
+    -webkit-transform: translateX(33.4vh);
+            transform: translateX(33.4vh);
   }
 }
 
@@ -304,7 +304,9 @@ nav {
 /* INFO SECTION */
 .info-container {
   width: 100%;
-  height: 70vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -314,7 +316,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 100px;
+  padding: 200px 100px;
 }
 
 .info-container .info-box {
@@ -330,21 +332,21 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 950px;
+  max-width: 1200px;
 }
 
 .info-container .info-box .info-text {
   margin: auto;
   background-color: white;
-  padding: 30px 50px 30px 70px;
+  padding: 50px 70px 50px 90px;
   margin-left: -20px;
-  border: 10px solid black;
+  border: 9px solid black;
   border-radius: 20px;
   z-index: 0;
 }
 
 .info-container .info-box .info-text h3 {
-  font-size: 1.7em;
+  font-size: 2em;
   line-height: 0.8em;
 }
 
@@ -354,7 +356,7 @@ nav {
 }
 
 .info-container .info-box .info-text p {
-  font-size: 1.1em;
+  font-size: 1.4em;
 }
 
 .info-container .info-box .info-image {
@@ -362,18 +364,126 @@ nav {
 }
 
 .info-container .info-box .info-image .info-image-border {
-  border: 10px solid black;
+  border: 9px solid black;
   border-radius: 20px;
   z-index: 1;
-  height: 400px;
-  width: 400px;
+  height: 500px;
+  width: 500px;
   position: absolute;
 }
 
 .info-container .info-box .info-image img {
-  width: 400px;
+  width: 500px;
   z-index: 0;
   border-radius: 20px;
+}
+
+/* RANK SECTION */
+.rank-container {
+  width: 110%;
+  margin-left: -5%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 150px 0;
+  background-color: #555;
+  -webkit-transform: rotate(-2deg);
+          transform: rotate(-2deg);
+  border-top: 9px solid black;
+  border-bottom: 9px solid black;
+}
+
+.rank-container .rank-heading {
+  width: 42%;
+  margin: auto;
+  -webkit-transform: rotate(2deg);
+          transform: rotate(2deg);
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.rank-container .rank-heading h1 {
+  font-size: 5em;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.rank-container .rank-heading p {
+  color: white;
+  font-size: 1.4em;
+}
+
+.rank-container .rank-box {
+  -webkit-transform: rotate(2deg);
+          transform: rotate(2deg);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-gap: 30px;
+  padding: 0px 30px;
+  width: 90%;
+  margin: auto;
+}
+
+.rank-container .rank-card {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  background-color: white;
+  border: 9px solid black;
+  border-radius: 15px;
+}
+
+.rank-container .rank-card .rank-card-img {
+  width: 300px;
+  min-width: 200px;
+  min-height: 300px;
+  background-image: url(/images/characters/10.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 7px 0 0 7px;
+}
+
+.rank-container .rank-card .rank-card-img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 6px 0 0 6px;
+}
+
+.rank-container .rank-card-text {
+  padding: 20px 50px;
+  max-width: 500px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.rank-container .rank-card-text h3 {
+  font-size: 2em;
+  padding: 0;
+  margin-bottom: -7px;
+}
+
+.rank-container .rank-card-text h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.rank-container .rank-card-text p {
+  font-size: 1.4em;
 }
 
 /* COLLABERATION SECTION */
@@ -394,10 +504,14 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   color: #fff;
-  border-top: 7px solid black;
-  border-bottom: 7px solid black;
+  border-bottom: 9px solid black;
   -webkit-transform: rotate(-2deg);
           transform: rotate(-2deg);
+  width: 110%;
+  margin-left: -5%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   overflow: hidden;
 }
 
@@ -414,12 +528,13 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   margin: 5px;
-  font-size: 3rem;
+  font-size: 5em;
   color: #fff;
+  margin-bottom: 15px;
 }
 
 .collab-text {
-  font-size: 1rem;
+  font-size: 1.4em;
   padding: 5px 0 25px 0;
   -webkit-transform: rotate(2deg);
           transform: rotate(2deg);
