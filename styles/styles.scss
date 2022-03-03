@@ -1,9 +1,17 @@
+$red: #FF6D6D;
+$blue: #47C9FF;
+$purple: #AD7CFF;
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Kulim Park", sans-serif;
-  
+}
+::selection {
+  background: $red; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: $red; /* Gecko Browsers */
 }
 h1, h2, h3, h4, h5, h6 {
   letter-spacing: -0.05em;
@@ -200,7 +208,7 @@ nav {
   justify-content: center;
   align-items: center;
   padding: 200px 100px 100px 100px;
-
+  
   & {
     .info-box {
       width: fit-content;
@@ -262,6 +270,9 @@ nav {
       background-size: contain;
       background-repeat: no-repeat;
       transform: rotate(2deg);
+      & h3::selection {
+        background: $blue; /* WebKit/Blink Browsers */
+      }
     }
     #purple-blotch {
       background-image: url(/images/blotch/purple.png);
@@ -269,6 +280,9 @@ nav {
       background-size: contain;
       background-repeat: no-repeat;
       transform: rotate(-3deg);
+      & h3::selection {
+        background: $red; /* WebKit/Blink Browsers */
+      }
     }
     #blue-blotch {
       background-image: url(/images/blotch/blue.png);
@@ -276,6 +290,9 @@ nav {
       background-size: contain;
       background-repeat: no-repeat;
       transform: rotate(4deg);
+      & h3::selection {
+        background: $purple; /* WebKit/Blink Browsers */
+      }
     }
   }
 }
@@ -287,6 +304,7 @@ nav {
   align-items: center;
   z-index: 100;
   width: 100%;
+  z-index: 99999;
   & .video-border {
     position: absolute;
     height: 450px;
@@ -308,6 +326,113 @@ nav {
     color: #bbb
   }
 }
+.video-seperator {
+  margin-top: 250px;
+  width: 110%;
+  margin-left: -5%;
+  border-top: 9px solid black;
+  transform: rotate(-3deg);
+  height: 350px;
+  background-color: #333;
+}
+
+.expanding-container {
+  margin-top: -100px;
+  background: #333;
+  width: 100%;
+  height: 500px;
+  position: relative;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+}
+.expanding-box {
+  position: absolute;
+  z-index: 999;
+  max-width: 1000px;
+  background-color: #fff;
+  color: #454545;
+  padding: 50px 80px 100px 80px;
+  outline: 9px solid black;
+  border-radius: 15px;
+  box-shadow: 0 0px 100px rgba(0,0,0,0.5);
+  transition: 0.3s;
+  height: fit-content;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  & .continue-reading {
+    position: absolute;
+    bottom: 25px;
+    color: white;
+    background-color: #222;
+    box-shadow: none;
+    font-size: 1.5em;
+  }
+  & p {
+    font-size: 1.4em;
+  }
+  & .expanding-header {
+    text-align: center;
+    margin-bottom: 30px;
+    color: black;
+    
+    & h1 {
+      font-size: 4em;
+    }
+    & h3 {
+      font-size: 2em;
+      color: #555;
+    }
+    & p {
+      background-image:
+      linear-gradient(180deg, rgba(187,187,187,1) 0%, rgba(187,187,187,0) 5%, rgba(187,187,187,0) 100%);
+    }
+  }
+}
+
+.closed {
+  background-color: #333;
+  outline: 0px solid black;
+  border-radius: 15px;
+  box-shadow: 0 0 0px rgba(0,0,0,0.5);
+  color: #bbb;
+  height: 430px;
+  transition: 0.3s;
+  & .continue-reading {
+    position: absolute;
+    bottom: 25px;
+    position: absolute;
+    bottom: 25px;
+    color: black;
+    background-color: white;
+    box-shadow: -5px 5px 0 black;
+    &:hover {
+      transform: translateY(-5px);
+      transition: 0.3s;
+      box-shadow: -7px 12px 0px 0px #000;
+    }
+  }
+  & p {
+    background-image:
+    linear-gradient(180deg, rgba(187,187,187,1) 0%, rgba(187,187,187,0) 20%, rgba(187,187,187,0) 100%);
+    background-clip: text;
+    background-size: 100%;
+  background-repeat: repeat;
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  }
+  & h1 {
+    color: $purple;
+  }
+  & h3 {
+    color: $purple !important;
+  }
+}
 
 
 /* RANK SECTION */
@@ -316,7 +441,7 @@ nav {
   z-index: 4;
   margin-left: -5%;
   height: fit-content;
-  padding: 250px 0 150px 0;
+  padding: 130px 0 150px 0;
   background-color: #555;
   transform: rotate(-2deg);
   border-top: 9px solid black;

@@ -208,6 +208,20 @@
       <div class="video-border"></div>
       <div class="video"><p>play</p></div>
     </div>
+    <div class="video-seperator"></div>
+
+    <!-- BEGIN CHAPTER SECTION -->
+    <div class="expanding-container">
+      <div id="expanding-box" class="expanding-box closed">
+        <div class="expanding-header">
+            <h3>Chapter 1</h3>
+            <h1>The Big Sploot</h1>
+        </div>
+        <button onclick="expandingBox()" class="continue-reading">Button</button>
+        <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia, nesciunt. Cupiditate libero quibusdam commodi voluptatum ullam eum temporibus repudiandae debitis odit amet. Quidem rem, ullam ducimus impedit id cupiditate necessitatibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus sit alias itaque officiis, natus veniam deserunt perspiciatis autem cupiditate fugit asperiores commodi porro qui tenetur temporibus amet.<br><br> Exercitationem, asperiores dolorem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quia nesciunt? Dicta dolorem quam, minus optio error, quasi quia maxime aspernatur aliquam odio blanditiis, officiis vel eveniet fuga similique esse? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia adipisci vitae magnam saepe totam praesentium impedit placeat <br><br>illo dolor sequi earum dolorem expedita nobis fugiat, aliquam nisi nostrum animi qui. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati, cupiditate error porro optio, quas ex quisquam nesciunt quibusdam ipsam nemo voluptatum, illum ut vitae iusto molestiae facilis suscipit rem dolore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nobis consectetur, vitae voluptate laborum blanditiis debitis quasi, laudantium molestias aliquam dicta quam temporibus doloribus reiciendis. Culpa qui saepe dicta! Sed! Lorem ipsum dolor sit amet consectetur adipisicing elit. <br><br>Natus nulla earum animi harum? Reiciendis at libero unde necessitatibus doloribus dolor ipsam officiis perferendis, sequi eos iure? Sunt, excepturi iure. Soluta. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, iusto voluptas ducimus minima, eveniet consequuntur ipsa saepe quasi vel molestias <br><br>expedita delectus quo illum accusantium neque. Numquam culpa molestiae adipisci? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, aspernatur? Eaque nostrum, perferendis impedit suscipit aspernatur incidunt nam dolor placeat enim, omnis qui, odio accusamus voluptates ex explicabo ipsa at. <br><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, assumenda quae atque id ipsam asperiores excepturi repellat maxime! At magnam dolores rerum exercitationem quos, eius nostrum ipsam! Facere, consequuntur nostrum! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus perferendis praesentium id nostrum ea <br><br>Exercitationem, asperiores dolorem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quia nesciunt? Dicta dolorem quam, minus optio error, quasi quia maxime aspernatur aliquam odio blanditiis, officiis vel eveniet fuga similique esse? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia adipisci vitae magnam saepe totam praesentium impedit placeat </p>
+    </div>
+    </div>
 
 
     <!-- BEGIN RANK SECTION -->
@@ -313,6 +327,11 @@
     </footer>
     <!-- END FOOTER SECTION -->
 
-    <link rel="stylesheet" href="script.js" />
+    <script>
+      function expandingBox() {
+    var element = document.getElementById("expanding-box");
+    element.classList.toggle("closed");
+  }
+    </script>
   </body>
 </html>
