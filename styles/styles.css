@@ -521,12 +521,12 @@ nav {
   -webkit-transform: rotate(-3deg);
           transform: rotate(-3deg);
   height: 350px;
-  background-color: #333;
+  background-color: #222;
 }
 
 .expanding-container {
   margin-top: -100px;
-  background: #333;
+  background: #222;
   width: 100%;
   height: 500px;
   position: relative;
@@ -602,7 +602,7 @@ nav {
 }
 
 .closed {
-  background-color: #333;
+  background-color: #222;
   outline: 0px solid black;
   border-radius: 15px;
   -webkit-box-shadow: 0 0 0px rgba(0, 0, 0, 0.5);
@@ -653,6 +653,81 @@ nav {
   color: #AD7CFF !important;
 }
 
+/* ROADMAP SECTION */
+.roadmap-container {
+  background-image: url(/images/earth.png);
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #222;
+  padding-top: 50px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.roadmap-container .roadmap-ufo {
+  position: absolute;
+  margin: auto;
+  height: 100%;
+  width: auto;
+}
+
+.roadmap-container .roadmap-ufo img {
+  height: 70%;
+}
+
+.roadmap-container .roadmap-text {
+  position: relative;
+  width: 60%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -ms-grid-rows: auto auto auto auto auto auto auto;
+      grid-template-rows: auto auto auto auto auto auto auto;
+  grid-row-gap: 10px;
+  grid-column-gap: 60px;
+  margin-top: 13%;
+  padding-bottom: 35%;
+}
+
+.roadmap-container .roadmap-text div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  color: white;
+}
+
+.roadmap-container .roadmap-text div h3 {
+  font-size: 2em;
+}
+
+.roadmap-container .roadmap-text div p {
+  font-size: 1.4em;
+  font-weight: lighter;
+}
+
+.roadmap-container .roadmap-text .roadmap-left {
+  text-align: right;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
 /* RANK SECTION */
 .rank-container {
   width: 110%;
@@ -667,7 +742,7 @@ nav {
           transform: rotate(-2deg);
   border-top: 9px solid black;
   border-bottom: 9px solid black;
-  margin-top: 300px;
+  margin-top: -200px;
 }
 
 .rank-container .rank-heading {
