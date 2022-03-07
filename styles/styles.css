@@ -4,6 +4,11 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Kulim Park", sans-serif;
+  text-decoration: none;
+}
+
+a {
+  color: black;
 }
 
 ::-moz-selection {
@@ -97,7 +102,7 @@ nav {
   font-weight: bold;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  font-size: 20px;
+  font-size: 1.4em;
 }
 
 .nav-links li:hover {
@@ -124,7 +129,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 20px;
+  font-size: 1.4em;
 }
 
 .nav-discord #nav-discord-img {
@@ -172,7 +177,7 @@ nav {
 
 /* HERO */
 .hero-container {
-  height: calc(100vh);
+  height: calc(90vh);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -197,7 +202,7 @@ nav {
 
 .hero-overlay {
   background-color: rgba(255, 255, 255, 0);
-  height: calc(100vh);
+  height: calc(90vh);
   width: 100%;
   z-index: 2;
   border-bottom: 10px solid black;
@@ -209,7 +214,7 @@ nav {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  max-height: 100vh;
+  max-height: 90vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -690,14 +695,42 @@ nav {
   width: 60%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto auto;
-      grid-template-columns: auto auto;
-  -ms-grid-rows: auto auto auto auto auto auto auto;
-      grid-template-rows: auto auto auto auto auto auto auto;
+  -ms-grid-columns: (auto)[2];
+      grid-template-columns: repeat(2, auto);
+  -ms-grid-rows: (auto)[7];
+      grid-template-rows: repeat(7, auto);
   grid-row-gap: 10px;
   grid-column-gap: 60px;
   margin-top: 13%;
   padding-bottom: 35%;
+}
+
+.roadmap-container .roadmap-text .r1 {
+  margin-right: 15px;
+}
+
+.roadmap-container .roadmap-text .r2 {
+  margin-left: 15px;
+}
+
+.roadmap-container .roadmap-text .r3 {
+  margin-right: 25px;
+}
+
+.roadmap-container .roadmap-text .r4 {
+  margin-left: 25px;
+}
+
+.roadmap-container .roadmap-text .r5 {
+  margin-right: 35px;
+}
+
+.roadmap-container .roadmap-text .r6 {
+  margin-left: 35px;
+}
+
+.roadmap-container .roadmap-text .r7 {
+  margin-right: 45px;
 }
 
 .roadmap-container .roadmap-text div {
@@ -743,6 +776,8 @@ nav {
   border-top: 9px solid black;
   border-bottom: 9px solid black;
   margin-top: -200px;
+  position: relative;
+  z-index: 10;
 }
 
 .rank-container .rank-heading {
@@ -838,10 +873,101 @@ nav {
   font-size: 1.4em;
 }
 
-/* COLLABERATION SECTION */
+/* TEAM SECTION */
+.team-container {
+  -webkit-transform: rotate(1deg);
+          transform: rotate(1deg);
+  width: 110%;
+  margin-left: -5%;
+  background-color: #47C9FF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 200px 0 130px 0;
+  margin-top: -100px;
+  margin-bottom: -100px;
+  z-index: 9;
+  position: relative;
+  outline: 9px solid black;
+}
+
+.team-container h1 {
+  -webkit-transform: rotate(-1deg);
+          transform: rotate(-1deg);
+  width: 100%;
+  text-align: center;
+  font-size: 5em;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.team-container .team-box {
+  -webkit-transform: rotate(-1deg);
+          transform: rotate(-1deg);
+  width: auto;
+  padding: 0px 0 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+}
+
+.team-container .team-box .team-card {
+  width: 300px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 20px;
+  -webkit-box-shadow: -8px 8px 0 black;
+          box-shadow: -8px 8px 0 black;
+}
+
+.team-container .team-box .team-card .title {
+  text-align: center;
+}
+
+.team-container .team-box .team-card .title h1 {
+  font-size: 2.6em;
+  color: black;
+  margin-bottom: 0;
+}
+
+.team-container .team-box .team-card .title p {
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+.team-container .team-box .team-card .portrait img {
+  margin: 10px 0;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.team-container .team-box .team-card .desc {
+  text-align: center;
+  font-size: 1.4em;
+}
+
+.team-container .team-box .team-card .desc .light {
+  color: #aaa;
+}
+
+/* COLLABORATION SECTION */
 .collab-container {
   background-color: #FF6D6D;
-  padding: 100px 0px 100px 0px;
+  padding: 200px 0px 100px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
