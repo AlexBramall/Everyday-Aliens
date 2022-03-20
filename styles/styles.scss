@@ -1,6 +1,8 @@
 $red: #FF6D6D;
 $blue: #47C9FF;
 $purple: #AD7CFF;
+$shadow: -5px 5px 0px 0px #000;
+
 * {
   margin: 0;
   padding: 0;
@@ -661,19 +663,59 @@ nav {
   }
 }
 
+/* FAQ SECTION */
+
+.faq-container {
+  padding: 150px 0;
+  height: fit-content;
+  background-color: $purple;
+  & h1 {
+    font-size: 5em;
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  & .faq-box {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: auto;
+    padding: 0 50px;
+    max-width: 1000px;
+    grid-gap: 30px;
+    & .faq-card {
+      padding: 30px 40px 30px;
+      background: white;
+      text-align: left;
+      border-radius: 10px;
+      box-shadow: -8px 8px 0 black; 
+      & h1 {
+        font-size: 3em;
+        color: black;
+        text-align: left;
+        margin-bottom: 5px;
+      }
+      & p {
+        font-size: 1.4em;
+      }
+    }
+  }
+}
+
 
 
 /* COLLABORATION SECTION */
 
 .collab-container {
   background-color: #FF6D6D;
-  padding: 200px 0px 100px 0px;
+  padding: 100px 0px 100px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: #fff;
+  margin-top: -50px;
   border-bottom: 9px solid black;
+  border-top: 9px solid black;
   transform: rotate(-2deg);
   width: 110%;
   margin-left: -5%;
