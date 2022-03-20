@@ -30,7 +30,7 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
+    <header class="nav-desktop">
       <nav>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
@@ -54,6 +54,40 @@
         </ul>
       </div>
     </header>
+
+    <header class="nav-mobile">
+      <div class="menu-bar">
+          <p onclick="popNav()" class="menu-button">menu</p>
+        <div>
+          <img src="images/EverydayAliens_SimpleLogo_Small.png" alt="">
+        </div>
+      </div>
+      <div id="nav-pop" class="nav-pop nav-closed">
+        <div class="nav-links-mobile">
+          <a href="">
+            <p class="discord-nav">Join Discord</p>
+          </a>
+          <div class="nav-links-mobile-links">
+            <a href="">
+              <p>About</p>
+            </a>
+            <a href="">
+              <p>Roadmap</p>
+            </a>
+            <a href="">
+              <p>Ranks</p>
+            </a>
+            <a href="">
+              <p>Team</p>
+            </a>
+            <a href="">
+              <p>FAQ</p>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+    </header>
     <div class="hero-container">
       <div class="main-CTA">
         <img class="logo-loop" src="images/full_logo_transparent.png" alt="" />
@@ -62,7 +96,7 @@
           <button id="discord-button">Join Discord</button>
         </div>
       </div>
-      <!-- overlay is here just in case-->
+      <!-- hero-overlay is the black border -->
       <div class="hero-overlay"></div>
       <div class="hero-image-carousel">
         <div class="carousel-row right">
@@ -509,6 +543,10 @@
     var element = document.getElementById("expanding-box");
     element.classList.toggle("closed");
   }
+  function popNav() {
+    var element = document.getElementById("nav-pop");
+    element.classList.toggle("nav-closed");
+}
     </script>
   </body>
 </html>
