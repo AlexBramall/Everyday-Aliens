@@ -1,9 +1,13 @@
 function expandingBox() {
-    var element = document.getElementById("expanding-box");
-    element.classList.toggle("closed");
-  }
+  var element = document.getElementById("expanding-box");
+  element.classList.toggle("closed");
+}
 
 function popNav() {
-    var element = document.getElementsByClassName("nav-pop");
-    element.classList.toggle("nav-closed");
+  var element = document.getElementsByClassName("nav-pop");
+  element.classList.toggle("nav-closed");
 }
+
+document.getElementById("test").onclick = function () {
+  alert("testing");
+};
