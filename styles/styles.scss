@@ -315,6 +315,7 @@ body {
       display: flex;
       justify-content: center;
       font-size: 2em;
+      text-align: center;
 
       & .info-blotch {
         margin: 0 0px;
@@ -648,33 +649,30 @@ body {
 
     & .rank-card {
       width: fit-content;
+      max-width: 700px;
       display: flex;
       justify-content: center;
-      align-items: stretch;
+      align-items: center;
       background-color: white;
       border: 9px solid black;
       border-radius: 15px;
-
       & .rank-card-img {
-        width: 250px;
-        min-width: 200px;
-        min-height: 250px;
-        background-image: url(/images/characters/10.png);
-        background-size: cover;
-        background-position: center;
+        width: 40%;
         border-radius: 7px 0 0 7px;
-
+        align-self: stretch;
         & img {
-          height: 100%;
+          object-fit: cover;
           width: 100%;
+          height: 100%;
           border-radius: 6px 0 0 6px;
+          
         }
       }
     }
 
     & .rank-card-text {
       padding: 20px 50px;
-      max-width: 500px;
+      width: 60%;
       align-self: center;
 
       & h3 {
@@ -894,6 +892,9 @@ body {
 
 @media screen and (max-width: 849px) {
 
+  .fixed {
+    overflow-y: hidden;
+  }
   h1,
   h2,
   h3,
@@ -990,6 +991,8 @@ body {
       transform: scale(1);
       display: flex;
       justify-content: flex-end;
+      filter: blur(0);
+
       & .nav-links-mobile {
         top: 100px;
         right: 10%;
@@ -1021,7 +1024,8 @@ body {
     & .nav-closed {
       opacity: 0;
       transition: 0.3s;
-      transform: scale(0.95);
+      transform: scale(1.05);
+      filter: blur(1px);
       user-select: none;
       visibility: hidden;
     }
@@ -1528,31 +1532,31 @@ body {
 
     & .rank-card {
       width: 100%;
+      max-width: 300px;
+      margin: auto;
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
-      align-items: stretch;
       background-color: white;
       border: 9px solid black;
       border-radius: 15px;
       margin-bottom: 10px;
 
       & .rank-card-img {
-        width: 40%;
-        background-image: url(/images/characters/10.png);
-        background-size: cover;
-        background-position: center;
+        width: 100%;
+        height: auto;
         border-radius: 5px 0 0 5px;
 
         & img {
           height: 100%;
           width: 100%;
-          border-radius: 6px 0 0 6px;
+          border-radius: 6px 6px 0 0px;
         }
       }
     }
 
     & .rank-card-text {
-      width: 60%;
+      width: 100%;
       padding: 20px 20px;
       align-self: center;
 
@@ -1606,6 +1610,7 @@ body {
 
       & .team-card {
         width: 40%;
+        max-width: 200px;
         background-color: white;
         padding: 15px;
         border-radius: 8px;

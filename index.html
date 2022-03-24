@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="styles/styles.css" />
     <title>Document</title>
   </head>
-  <body>
+  <body id="body">
     <header class="nav-desktop">
       <nav>
         <ul class="nav-links">
@@ -339,6 +339,7 @@
       <div class="rank-box">
         <div class="rank-card">
           <div class="rank-card-img">
+            <img src="images/characters/10.png" alt="">
           </div>
           <div class="rank-card-text">
             <h3>Rank 1</h3>
@@ -348,6 +349,7 @@
         </div>
         <div class="rank-card">
           <div class="rank-card-img">
+            <img src="images/characters/10.png" alt="">
           </div>
           <div class="rank-card-text">
             <h3>Rank 1</h3>
@@ -357,6 +359,7 @@
         </div>
         <div class="rank-card">
           <div class="rank-card-img">
+            <img src="images/characters/10.png" alt="">
           </div>
           <div class="rank-card-text">
             <h3>Rank 1</h3>
@@ -366,6 +369,7 @@
         </div>
         <div class="rank-card">
           <div class="rank-card-img">
+            <img src="images/characters/10.png" alt="">
           </div>
           <div class="rank-card-text">
             <h3>Rank 1</h3>
@@ -375,6 +379,7 @@
         </div>
         <div class="rank-card">
           <div class="rank-card-img">
+            <img src="images/characters/10.png" alt="">
           </div>
           <div class="rank-card-text">
             <h3>Rank 1</h3>
@@ -384,6 +389,7 @@
         </div>
         <div class="rank-card">
           <div class="rank-card-img">
+            <img src="images/characters/10.png" alt="">
           </div>
           <div class="rank-card-text">
             <h3>Rank 1</h3>
@@ -546,6 +552,8 @@
   function popNav() {
     var element = document.getElementById("nav-pop");
     element.classList.toggle("nav-closed");
+    var body = document.getElementById("body");
+    body.classList.toggle("fixed");
 }
     </script>
   </body>
