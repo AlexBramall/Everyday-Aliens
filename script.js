@@ -20,11 +20,11 @@ images[3] = "images/slide/slide4.JPG";
 images[4] = "images/slide/slide5.JPG";
 images[5] = "images/slide/slide6.JPG";
 images[6] = "images/slide/slide7.JPG";
-images[7] = "images/slide/slide8.jpg";
-images[8] = "images/slide/slide9.jpg";
-images[9] = "images/slide/slide10.jpg";
-images[10] = "images/slide/slide11.jpg";
-images[11] = "images/slide/slide12.jpg";
+images[7] = "images/slide/slide8.JPG";
+images[8] = "images/slide/slide9.JPG";
+images[9] = "images/slide/slide10.JPG";
+images[10] = "images/slide/slide11.JPG";
+images[11] = "images/slide/slide12.JPG";
 
 // CHANGE IMAGE
 function changeImg() {
