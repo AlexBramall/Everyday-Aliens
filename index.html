@@ -250,14 +250,15 @@
     </div>
     <!-- END INFO SECTION -->
 
-    <!-- BEGIN VIDEO SECTION -->
+    <!-- BEGIN VIDEO SECTION 
     <div class="video-container">
       <div class="video-border"></div>
       <div class="video"><p>play</p></div>
     </div>
-
+ COMMENTED VIDEO SECTION --> 
     <div class="video-seperator"><a name="story"></a></div>
-
+   
+    
     <!-- BEGIN CHAPTER SECTION -->
     <div class="expanding-container">
       <div id="expanding-box" class="expanding-box closed">
@@ -265,8 +266,11 @@
           <h3>Chapter 1</h3>
           <h1>The Big Sploot</h1>
         </div>
-        <button onclick="expandingBox()" class="continue-reading">
-          Button
+        <button onclick="expandingBox()" class="continue-reading" id="button-1">
+          Continue Reading
+        </button>
+        <button onclick="expandingBox()" class="continue-reading button-hide" id="button-2">
+          Close
         </button>
         <p>
           The aliens lived in a dimension all on their own, yearning to meet
@@ -324,7 +328,9 @@
     <!-- BEGIN ROADMAP SECTION -->
     <div class="roadmap-container">
       <div class="roadmap-ufo">
-        <img src="images/ufo.png" alt="" />
+        <img class=mobile-hide src="images/ufo.png" alt="" />
+        <img class="desktop-hide mobile-ufo" src="images/UFO-mobile.png" alt="">
+        <img class="desktop-hide ufo-beam" src="images/beam.png" alt="">
       </div>
       <div class="roadmap-text">
         <div class="roadmap-left r1">
@@ -408,7 +414,9 @@
 
       <div class="rank-box">
         <div class="rank-card">
-          <div class="rank-card-img"></div>
+          <div class="rank-card-img">
+            <img src="images/characters/1.png" alt="">
+          </div>
           <div class="rank-card-text">
             <h3>Rank 1</h3>
             <h1>Senior Officers</h1>
@@ -419,7 +427,9 @@
           </div>
         </div>
         <div class="rank-card">
-          <div class="rank-card-img"></div>
+          <div class="rank-card-img">
+            <img src="images/characters/1.png" alt="">
+          </div>
           <div class="rank-card-text">
             <h3>Rank 1</h3>
             <h1>Senior Officers</h1>
@@ -430,7 +440,9 @@
           </div>
         </div>
         <div class="rank-card">
-          <div class="rank-card-img"></div>
+          <div class="rank-card-img">
+            <img src="images/characters/1.png" alt="">
+          </div>
           <div class="rank-card-text">
             <h3>Rank 1</h3>
             <h1>Senior Officers</h1>
@@ -441,7 +453,9 @@
           </div>
         </div>
         <div class="rank-card">
-          <div class="rank-card-img"></div>
+          <div class="rank-card-img">
+            <img src="images/characters/1.png" alt="">
+          </div>
           <div class="rank-card-text">
             <h3>Rank 1</h3>
             <h1>Senior Officers</h1>
@@ -452,7 +466,9 @@
           </div>
         </div>
         <div class="rank-card">
-          <div class="rank-card-img"></div>
+          <div class="rank-card-img">
+            <img src="images/characters/1.png" alt="">
+          </div>
           <div class="rank-card-text">
             <h3>Rank 1</h3>
             <h1>Senior Officers</h1>
@@ -463,7 +479,9 @@
           </div>
         </div>
         <div class="rank-card">
-          <div class="rank-card-img"></div>
+          <div class="rank-card-img">
+            <img src="images/characters/1.png" alt="">
+          </div>
           <div class="rank-card-text">
             <h3>Rank 1</h3>
             <h1>Senior Officers</h1>
@@ -489,7 +507,7 @@
             <p>Creator & Artist</p>
           </div>
           <div class="portrait">
-            <img src="images/characters/neblum.JPG" alt="" />
+            <img src="images/characters/nick.jpg" alt="" />
           </div>
           <div class="desc">
             <p>Head Scientist</p>
@@ -499,10 +517,10 @@
         <div class="team-card">
           <div class="title">
             <h1>Brams</h1>
-            <p>Project Manager/Dev</p>
+            <p>Project Manager & Developer</p>
           </div>
           <div class="portrait">
-            <img src="images/characters/Brams.jpg" alt="" />
+            <img src="images/characters/alex.jpg" alt="" />
           </div>
           <div class="desc">
             <p>Astro Physicist</p>
@@ -512,10 +530,10 @@
         <div class="team-card">
           <div class="title">
             <h1>Bivens</h1>
-            <p>Marketing/Community</p>
+            <p>Marketing & Community</p>
           </div>
           <div class="portrait">
-            <img src="images/characters/bivens.jpg" alt="" />
+            <img src="images/characters/biv.jpg" alt="" />
           </div>
           <div class="desc">
             <p>Portal Engineer</p>
@@ -535,19 +553,6 @@
             <p class="light">Badge #00004</p>
           </div>
         </div>
-        <!--
-        <div class="team-card">
-          <div class="title">
-            <h1>Jherm</h1>
-            <p>Narrative Designer</p>
-          </div>
-            <img src="images/characters/10.png" alt="" />
-          </div>
-          <div class="desc">
-            <p>Memory Scientist</p>
-            <p class="light">Badge #00005</p>
-          </div>
-        </div>-->
       </div>
     </div>
     <!-- BEGIN FAQ SECTION -->
@@ -566,15 +571,15 @@
           </p>
         </div>
         <div class="faq-card">
-          <h1>What if the total supply?</h1>
-          <p>A total of 10,000 Everyday Aliens will crash land onto Earth.</p>
-        </div>
-        <div class="faq-card">
           <h1>How much will it cost to mint an Alien?</h1>
           <p>
             It will cost 0.07eth (plus gas) to mint a single Everyday Alien for
             both the public mint and Abduction List mint.
           </p>
+        </div>
+        <div class="faq-card">
+          <h1>What if the total supply?</h1>
+          <p>A total of 10,000 Everyday Aliens will crash land onto Earth.</p>
         </div>
         <div class="faq-card">
           <h1>How many Aliens can I mint?</h1>
@@ -632,11 +637,18 @@
     </footer>
     <!-- END FOOTER SECTION -->
 
-    <script src="script.js">
+    <script>
+      /* roadmap button logic */
       function expandingBox() {
         var element = document.getElementById("expanding-box");
+        var button = document.getElementById("button-1");
+        var buttontwo = document.getElementById("button-2");
         element.classList.toggle("closed");
+        button.classList.toggle("button-hide");
+        buttontwo.classList.toggle("button-hide");
       }
+
+      /* mobile nav logic */
       function popNav() {
         var element = document.getElementById("nav-pop");
         element.classList.toggle("nav-closed");
