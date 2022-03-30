@@ -2,6 +2,12 @@ $red: #FF6D6D;
 $blue: #47C9FF;
 $purple: #AD7CFF;
 $shadow: -8px 8px 0px 0px #000;
+html {
+  scroll-behavior: smooth;
+}
+button {
+  font-size: 1.4em !important
+}
 a:visited {
   color:black;
   text-decoration: none;
@@ -813,7 +819,7 @@ body {
         box-shadow: -8px 8px 0 black;
 
         & h1 {
-          font-size: 3em;
+          font-size: 2em;
           color: black;
           text-align: left;
           margin-bottom: 5px;
@@ -1319,13 +1325,12 @@ body {
   }
 
   .video-seperator {
-    display: none;
     margin-top: 120px;
-    width: 110%;
+    width: 0%;
     margin-left: -5%;
-    border-top: 9px solid black;
+    border-top: 0px solid black;
     transform: rotate(-3deg);
-    height: 350px;
+    height: 0px;
     background-color: #222;
   }
 
@@ -1595,12 +1600,12 @@ body {
         justify-self: center;
         width: 100%;
         height: auto;
-        border-radius: 5px 0 0 5px;
+        border-radius: 5px 5px 0 0px;
 
         & img {
           height: 100%;
           width: 100%;
-          border-radius: 6px 0 0 6px;
+          border-radius: 6px 6px 0 0px;
         }
       }
     }
