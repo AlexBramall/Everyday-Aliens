@@ -7,6 +7,8 @@
       type="icon"
       href="images/EverydayAliens_SimpleLogo_Small.png"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -71,19 +73,19 @@
             <p class="discord-nav">Join Discord</p>
           </a>
           <div class="nav-links-mobile-links">
-            <a href="#about">
+            <a class=nav-link-button href="#about">
               <p>About</p>
             </a>
-            <a href="#story">
+            <a class=nav-link-button href="#story">
               <p>Roadmap</p>
             </a>
-            <a href="#ranks">
+            <a class=nav-link-button href="#ranks">
               <p>Ranks</p>
             </a>
-            <a href="#team">
+            <a class=nav-link-button href="#team">
               <p>Team</p>
             </a>
-            <a href="#faq">
+            <a class=nav-link-button href="#faq">
               <p>FAQ</p>
             </a>
           </div>
@@ -666,7 +668,11 @@
       function popNav() {
         var element = document.getElementById("nav-pop");
         element.classList.toggle("nav-closed");
-      }
+      };
+      
+        $(".nav-link-button").click(function() {
+          $("#nav-pop").toggleClass("nav-closed");
+        })
     </script>
   </body>
 </html>
