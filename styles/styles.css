@@ -218,7 +218,7 @@ body {
     border-bottom: 10px solid black;
   }
   .hero-image-carousel {
-    opacity: 1;
+    opacity: 0.5;
     position: absolute;
     height: -webkit-fit-content;
     height: -moz-fit-content;
@@ -1187,7 +1187,7 @@ body {
     border-bottom: 10px solid black;
   }
   .hero-image-carousel {
-    opacity: 1;
+    opacity: 0.5;
     position: absolute;
     height: -webkit-fit-content;
     height: -moz-fit-content;

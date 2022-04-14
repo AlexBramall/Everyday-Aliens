@@ -94,7 +94,14 @@
     </header>
     <div class="hero-container">
       <div class="main-CTA">
-        <img class="logo-loop" src="images/videos/logo-loop.webm" alt="" />
+        <video autoplay loop width="650">
+
+          <source src="/images/videos/logo-loop.webm"
+                  type="video/webm" >
+      
+          <source src="/media/cc0-videos/flower.mp4"
+                  type="image/png">
+      </video>
         <div class="social-buttons">
           <a href="https://twitter.com/EverydayAliens" target="_blank">
             <button id="twitter-button">Twitter</button></a
@@ -776,7 +783,7 @@
       $('.carousel-row-rtl').slick({
         infinite: true,
         autoplay: true,
-        slidesToShow: 10,
+        slidesToShow: 14,
         slidesToScroll: 1,
         adaptiveHeight: true,
         speed: 10000,
@@ -793,7 +800,7 @@
       $('.carousel-row').slick({
         infinite: true,
         autoplay: true,
-        slidesToShow: 10,
+        slidesToShow: 14,
         slidesToScroll: 1,
         adaptiveHeight: true,
         speed: 10000,
