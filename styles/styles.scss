@@ -54,7 +54,6 @@ body {
   background-color: #ffdf6f;
   overflow-x: hidden;
 }
-
 @media screen and (min-width: 850px) {
   
 
@@ -158,19 +157,19 @@ body {
   }
 
   .logo-loop {
-    width: 600px;
+    width: 700px;
     padding-bottom: 20px;
   }
 
   /* HERO */
   .hero-container {
     height: calc(80vh);
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: -113.9px;
     overflow-x: hidden !important;
+    display: flex;
   }
 
   .main-CTA {
@@ -190,29 +189,16 @@ body {
   }
 
   .hero-image-carousel {
-    opacity: 0.5;
+    opacity: 1;
     position: absolute;
     height: fit-content;
     max-height: 80vh;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    top: 0;
     overflow: hidden !important;
-
-    & .carousel-row {
-      height: fit-content;
-      display: flex;
-      flex-wrap: nowrap;
-
-      & img {
-        width: 16vh;
-      }
-    }
   }
 
-  /* background animating kind of,... */
+  /* background animating kind of,... 
   @keyframes right {
     from {
       transform: translateX(0);
@@ -240,15 +226,17 @@ body {
   .left {
     animation: left 8s infinite linear;
   }
-
+*/
   .social-buttons {
     display: flex;
     justify-content: center;
+    color: white !important;
   }
 
   #twitter-button,
   #discord-button {
     margin: 0 10px;
+    color: white !important;
   }
 
   #twitter-button {
@@ -1079,29 +1067,16 @@ body {
     border-bottom: 10px solid black;
   }
 
-  .hero-image-carousel {
-    top: 0;
-    opacity: 0.7;
-    position: absolute;
-    height: fit-content;
-    max-height: 80vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    overflow: hidden !important;
-
-    & .carousel-row {
+    .hero-image-carousel {
+      opacity: 1;
+      position: absolute;
       height: fit-content;
-      display: flex;
-      flex-wrap: nowrap;
-
-      & img {
-        width: 16vh;
-      }
+      max-height: 80vh;
+      width: 100%;
+      top: 0;
+      overflow: hidden !important;
     }
-  }
+  
 
   /* background animating kind of,... */
   @keyframes right {
@@ -1810,12 +1785,16 @@ body {
 
   .footer-logo-icon {
     height: 3.75rem;
-    padding: 0 20px 0 0;
+    padding: 0 30px;
   }
 
   .footer-social-links {
     cursor: pointer;
     font-size: 2.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .fa-brands {

@@ -184,15 +184,12 @@ body {
     cursor: pointer;
   }
   .logo-loop {
-    width: 600px;
+    width: 700px;
     padding-bottom: 20px;
   }
   /* HERO */
   .hero-container {
     height: calc(80vh);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -205,6 +202,9 @@ body {
             justify-content: center;
     margin-top: -113.9px;
     overflow-x: hidden !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .main-CTA {
     position: absolute;
@@ -218,88 +218,45 @@ body {
     border-bottom: 10px solid black;
   }
   .hero-image-carousel {
-    opacity: 0.5;
+    opacity: 1;
     position: absolute;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     max-height: 80vh;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    top: 0;
     overflow: hidden !important;
   }
-  .hero-image-carousel .carousel-row {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
-  .hero-image-carousel .carousel-row img {
-    width: 16vh;
-  }
-  /* background animating kind of,... */
-  @-webkit-keyframes right {
-    from {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-    }
-    to {
-      -webkit-transform: translateX(-33.4vh);
-              transform: translateX(-33.4vh);
-    }
-  }
+  /* background animating kind of,... 
   @keyframes right {
     from {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
+      transform: translateX(0);
     }
+
     to {
-      -webkit-transform: translateX(-33.4vh);
-              transform: translateX(-33.4vh);
+      transform: translateX(-33.4vh);
     }
   }
+
   .right {
-    -webkit-animation: right 8s infinite linear;
-            animation: right 8s infinite linear;
+    animation: right 8s infinite linear;
   }
-  @-webkit-keyframes left {
-    from {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-    }
-    to {
-      -webkit-transform: translateX(33.4vh);
-              transform: translateX(33.4vh);
-    }
-  }
+
   @keyframes left {
     from {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
+      transform: translateX(0);
     }
+
     to {
-      -webkit-transform: translateX(33.4vh);
-              transform: translateX(33.4vh);
+      transform: translateX(33.4vh);
     }
   }
+
   .left {
-    -webkit-animation: left 8s infinite linear;
-            animation: left 8s infinite linear;
+    animation: left 8s infinite linear;
   }
+*/
   .social-buttons {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -307,10 +264,12 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    color: white !important;
   }
   #twitter-button,
   #discord-button {
     margin: 0 10px;
+    color: white !important;
   }
   #twitter-button {
     background-color: #7bbcff;
@@ -1228,39 +1187,15 @@ body {
     border-bottom: 10px solid black;
   }
   .hero-image-carousel {
-    top: 0;
-    opacity: 0.7;
+    opacity: 1;
     position: absolute;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     max-height: 80vh;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    top: 0;
     overflow: hidden !important;
-  }
-  .hero-image-carousel .carousel-row {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
-  .hero-image-carousel .carousel-row img {
-    width: 16vh;
   }
   /* background animating kind of,... */
   @-webkit-keyframes right {
@@ -2059,11 +1994,21 @@ body {
   }
   .footer-logo-icon {
     height: 3.75rem;
-    padding: 0 20px 0 0;
+    padding: 0 30px;
   }
   .footer-social-links {
     cursor: pointer;
     font-size: 2.5rem;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .fa-brands {
     color: black;
