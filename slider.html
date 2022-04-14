@@ -1,0 +1,95 @@
+<html>
+  <head>
+  <title>My Now Amazing Webpage</title>
+  <link rel="stylesheet" type="text/css" href="slick-1.8.1\slick\slick.css"/>
+  <link rel="stylesheet" href="styles/styles.css">
+
+  </head>
+  <body>
+
+    <div class="carousel-row">
+        <img src="images/characters/2.png" alt="" />
+        <img src="images/characters/3.png" alt="" />
+        <img src="images/characters/4.png" alt="" />
+        <img src="images/characters/5.png" alt="" />
+        <img src="images/characters/6.png" alt="" />
+        <img src="images/characters/7.png" alt="" />
+        <img src="images/characters/8.png" alt="" />
+        <img src="images/characters/9.png" alt="" />
+        <img src="images/characters/10.png" alt="" />
+        <img src="images/characters/11.png" alt="" />
+        <img src="images/characters/12.png" alt="" />
+        <img src="images/characters/13.png" alt="" />
+        <img src="images/characters/15.png" alt="" />
+        <img src="images/characters/1.png" alt="" />
+        <img src="images/characters/15.png" alt="" />
+        <img src="images/characters/1.png" alt="" />
+      </div>
+
+    <div class="carousel-row-rtl" dir="rtl">
+        <img src="images/characters/2.png" alt="" />
+        <img src="images/characters/3.png" alt="" />
+        <img src="images/characters/4.png" alt="" />
+        <img src="images/characters/5.png" alt="" />
+        <img src="images/characters/6.png" alt="" />
+        <img src="images/characters/7.png" alt="" />
+        <img src="images/characters/8.png" alt="" />
+        <img src="images/characters/9.png" alt="" />
+        <img src="images/characters/10.png" alt="" />
+        <img src="images/characters/11.png" alt="" />
+        <img src="images/characters/12.png" alt="" />
+        <img src="images/characters/13.png" alt="" />
+        <img src="images/characters/15.png" alt="" />
+        <img src="images/characters/1.png" alt="" />
+        <img src="images/characters/15.png" alt="" />
+        <img src="images/characters/1.png" alt="" />
+      </div>
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript" src="slick-1.8.1\slick\slick.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.carousel-row-rtl').slick({
+        infinite: true,
+        autoplay: true,
+        slidesToShow: 10,
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+        speed: 3000,
+        arrows: false,
+        autoplaySpeed: 0,
+        cssEase: "linear",
+        draggable: false,
+        pauseOnFocus: false,
+        pauseOnHover: false,
+        rtl: true,
+      });
+    });
+    $(document).ready(function(){
+      $('.carousel-row').slick({
+        infinite: true,
+        autoplay: true,
+        slidesToShow: 10,
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+        speed: 3000,
+        arrows: false,
+        autoplaySpeed: 0,
+        cssEase: "linear",
+        draggable: false,
+        pauseOnFocus: false,
+        pauseOnHover: false,
+        rtl: false,
+      });
+    });
+  </script>
+
+  </body>
+</html>
