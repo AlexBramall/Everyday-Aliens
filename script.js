@@ -44,3 +44,12 @@ function changeImg() {
 // RUN FUNCTION WHEN PAGE LOADS
 
 window.onload = changeImg;
+
+let btnShow = document.getElementById("nav-discord-button");
+
+btnShow.addEventListener("click", () => {
+  swal(
+    "Our Discord is Not Open Just Yet",
+    "Continue to Check Our Twiter for Updates 👽"
+  );
+});
