@@ -50,6 +50,6 @@ let btnShow = document.getElementById("nav-discord-button");
 btnShow.addEventListener("click", () => {
   swal(
     "Our Discord is Not Open Just Yet",
-    "Continue to Check Our Twiter for Updates 👽"
+    "Continue to Check Our Twitter for Updates 👽"
   );
 });
