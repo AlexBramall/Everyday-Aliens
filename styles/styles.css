@@ -18,6 +18,7 @@ a:visited {
           box-sizing: border-box;
   font-family: "Kulim Park", sans-serif;
   text-decoration: none;
+  color: #000000;
 }
 
 .button-hide {
@@ -602,6 +603,8 @@ body {
     margin: auto;
     height: 100%;
     width: auto;
+    -webkit-transform: rotate(0.5deg) translateX(-20px);
+            transform: rotate(0.5deg) translateX(-20px);
   }
   .roadmap-container .roadmap-ufo img {
     height: 70%;
@@ -623,26 +626,26 @@ body {
     margin-top: 13%;
     padding-bottom: 35%;
   }
+  .roadmap-container .roadmap-text div h3, .roadmap-container .roadmap-text div p {
+    color: white !important;
+  }
   .roadmap-container .roadmap-text .r1 {
-    margin-right: 15px;
+    margin-right: 10px;
   }
   .roadmap-container .roadmap-text .r2 {
-    margin-left: 15px;
+    margin-left: 20px;
   }
   .roadmap-container .roadmap-text .r3 {
-    margin-right: 25px;
+    margin-right: 30px;
   }
   .roadmap-container .roadmap-text .r4 {
-    margin-left: 25px;
+    margin-left: 40px;
   }
   .roadmap-container .roadmap-text .r5 {
-    margin-right: 35px;
+    margin-right: 50px;
   }
   .roadmap-container .roadmap-text .r6 {
-    margin-left: 35px;
-  }
-  .roadmap-container .roadmap-text .r7 {
-    margin-right: 45px;
+    margin-left: 60px;
   }
   .roadmap-container .roadmap-text div {
     display: -webkit-box;
@@ -766,6 +769,7 @@ body {
   }
   /* TEAM SECTION */
   .team-container {
+    overflow: hidden;
     -webkit-transform: rotate(1deg);
             transform: rotate(1deg);
     width: 110%;
@@ -824,6 +828,16 @@ body {
     -webkit-box-shadow: -8px 8px 0 black;
             box-shadow: -8px 8px 0 black;
     height: auto;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .team-container .team-box .team-card:hover {
+    -webkit-transform: translate(5px, -5px);
+            transform: translate(5px, -5px);
+    -webkit-box-shadow: -15px 15px 0 black;
+            box-shadow: -15px 15px 0 black;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
   .team-container .team-box .team-card .title {
     text-align: center;
@@ -945,6 +959,7 @@ body {
     padding: 5px 0 25px 0;
     -webkit-transform: rotate(2deg);
             transform: rotate(2deg);
+    color: white;
   }
   .send-transmission {
     -webkit-transform: rotate(2deg);
@@ -952,7 +967,7 @@ body {
   }
   /* BEGIN FOOTER */
   footer {
-    padding: 2rem 0 2rem;
+    padding: 80px 50px 50px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -967,6 +982,7 @@ body {
   footer p {
     font-size: 20px;
     font-weight: bold;
+    width: 20%;
   }
   .footer-logo-icon {
     height: 3.75rem;
@@ -974,6 +990,8 @@ body {
   .footer-social-links {
     cursor: pointer;
     font-size: 2.5rem;
+    width: 20%;
+    text-align: right;
   }
   .fa-brands {
     color: black;
@@ -1657,6 +1675,9 @@ body {
     margin-top: 25%;
     padding-bottom: 35%;
   }
+  .roadmap-container .roadmap-text div h3, .roadmap-container .roadmap-text div p {
+    color: white !important;
+  }
   .roadmap-container .roadmap-text .r1 {
     margin-right: 15px;
   }
@@ -1841,8 +1862,17 @@ body {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .team-container .team-box a {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .team-container .team-box .team-card {
-    width: 40%;
+    width: 75%;
     background-color: white;
     padding: 15px;
     border-radius: 8px;
@@ -1967,6 +1997,7 @@ body {
   .collab-text {
     font-size: 1.4em;
     padding: 5px 0 25px 0;
+    color: white;
   }
   /* BEGIN FOOTER */
   footer {
