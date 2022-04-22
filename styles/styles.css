@@ -1186,7 +1186,7 @@ body {
   }
 
   .logo-loop {
-    width: 80%;
+    width: 100%;
     padding-bottom: 20px;
   }
 
@@ -1431,10 +1431,12 @@ body {
 
   #twitter-button {
     background-color: #7bbcff;
+    color: #fff;
   }
 
   #discord-button {
     background-color: #b47bff;
+    color: #fff;
   }
 
   /* INFO SECTION */
