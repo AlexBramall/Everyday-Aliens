@@ -45,9 +45,20 @@ function changeImg() {
 
 window.onload = changeImg;
 
+// DISCORD NOT OPEN ALERT
+
 let btnShow = document.getElementById("nav-discord-button");
 
 btnShow.addEventListener("click", () => {
+  swal(
+    "Our Discord is Not Open Just Yet",
+    "Continue to Check Our Twitter for Updates 👽"
+  );
+});
+
+let btnAlert = document.getElementById("discord-button");
+
+btnAlert.addEventListener("click", () => {
   swal(
     "Our Discord is Not Open Just Yet",
     "Continue to Check Our Twitter for Updates 👽"
