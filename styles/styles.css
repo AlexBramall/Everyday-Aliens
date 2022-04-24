@@ -50,11 +50,11 @@ h3,
 h4,
 h5,
 h6 {
-  letter-spacing: -0.05em;
+  letter-spacing: -0.0em;
 }
 
 p {
-  letter-spacing: -0.02em;
+  letter-spacing: -0.0em;
 }
 
 body {
@@ -185,7 +185,7 @@ body {
     cursor: pointer;
   }
   .logo-loop {
-    width: 700px;
+    width: 900px;
     padding-bottom: 20px;
   }
   /* HERO */
@@ -358,10 +358,16 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     font-size: 2em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .info-container .info-blotches .info-blotch {
     margin: 0 0px;
     padding: 25px 40px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .info-container .info-blotches #red-blotch {
     background-image: url(../images/blotch/red.png);
@@ -402,6 +408,9 @@ body {
     background-repeat: no-repeat;
     -webkit-transform: rotate(4deg);
             transform: rotate(4deg);
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
   .info-container .info-blotches #blue-blotch h3::-moz-selection {
     background: #AD7CFF;
@@ -603,8 +612,8 @@ body {
     margin: auto;
     height: 100%;
     width: auto;
-    -webkit-transform: rotate(0.5deg) translateX(-20px);
-            transform: rotate(0.5deg) translateX(-20px);
+    -webkit-transform: rotate(0.5deg) translateX(-30px);
+            transform: rotate(0.5deg) translateX(-30px);
   }
   .roadmap-container .roadmap-ufo img {
     height: 70%;
@@ -614,7 +623,7 @@ body {
   }
   .roadmap-container .roadmap-text {
     position: relative;
-    width: 60%;
+    max-width: 1000px;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (auto)[2];
@@ -622,9 +631,10 @@ body {
     -ms-grid-rows: (auto)[7];
         grid-template-rows: repeat(7, auto);
     grid-row-gap: 10px;
-    grid-column-gap: 60px;
+    grid-column-gap: 80px;
     margin-top: 13%;
     padding-bottom: 35%;
+    text-align: center;
   }
   .roadmap-container .roadmap-text div h3, .roadmap-container .roadmap-text div p {
     color: white !important;
@@ -653,9 +663,9 @@ body {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     color: white;
   }
   .roadmap-container .roadmap-text div h3 {
@@ -666,10 +676,10 @@ body {
     font-weight: lighter;
   }
   .roadmap-container .roadmap-text .roadmap-left {
-    text-align: right;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   /* RANK SECTION */
   .rank-container {
@@ -740,6 +750,8 @@ body {
   }
   .rank-container .rank-card .rank-card-img {
     min-width: 200px;
+    max-width: 300px;
+    max-height: 300px;
     min-height: 200px;
     border-radius: 7px 0 0 7px;
   }
@@ -880,8 +892,8 @@ body {
   .faq-container .faq-box {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: auto auto;
-        grid-template-columns: auto auto;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
     margin: auto;
     padding: 0 50px;
     max-width: 1000px;
@@ -1071,6 +1083,7 @@ body {
     top: 0;
     left: 0;
     z-index: 100000000;
+    padding: 20px 20px;
   }
   .nav-mobile .menu-bar {
     z-index: 101;
@@ -1128,7 +1141,7 @@ body {
   }
   .nav-mobile .nav-pop .nav-links-mobile {
     top: 100px;
-    right: 50px;
+    right: 20px;
     position: relative;
     text-align: right;
   }
@@ -1275,6 +1288,7 @@ body {
   #twitter-button,
   #discord-button {
     margin: 0 10px;
+    color: white;
   }
   #twitter-button {
     background-color: #7bbcff;
@@ -1388,6 +1402,9 @@ body {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1705,9 +1722,10 @@ body {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    text-align: center !important;
     color: white;
   }
   .roadmap-container .roadmap-text div h3 {
@@ -1872,7 +1890,7 @@ body {
             justify-content: center;
   }
   .team-container .team-box .team-card {
-    width: 75%;
+    max-width: 278px;
     background-color: white;
     padding: 15px;
     border-radius: 8px;
