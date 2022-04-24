@@ -345,7 +345,7 @@ body {
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
-        transform: rotate(-3deg);
+        transform: rotate(4deg);
 
         & h3::selection {
           background: $red;
@@ -358,7 +358,7 @@ body {
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
-        transform: rotate(4deg);
+        transform: rotate(-3deg);
         padding: 10px;
 
 

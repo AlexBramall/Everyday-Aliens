@@ -390,8 +390,8 @@ body {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    -webkit-transform: rotate(-3deg);
-            transform: rotate(-3deg);
+    -webkit-transform: rotate(4deg);
+            transform: rotate(4deg);
   }
   .info-container .info-blotches #purple-blotch h3::-moz-selection {
     background: #FF6D6D;
@@ -406,8 +406,8 @@ body {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    -webkit-transform: rotate(4deg);
-            transform: rotate(4deg);
+    -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
     padding: 10px;
   }
   .info-container .info-blotches #blue-blotch h3::-moz-selection {
