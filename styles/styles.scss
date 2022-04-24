@@ -44,11 +44,11 @@ h3,
 h4,
 h5,
 h6 {
-  letter-spacing: -0.05em;
+  letter-spacing: -0.0em;
 }
 
 p {
-  letter-spacing: -0.02em;
+  letter-spacing: -0.0em;
 }
 
 body {
@@ -158,7 +158,7 @@ body {
   }
 
   .logo-loop {
-    width: 700px;
+    width: 900px;
     padding-bottom: 20px;
   }
 
@@ -318,10 +318,13 @@ body {
       display: flex;
       justify-content: center;
       font-size: 2em;
+      align-items: center;
+
 
       & .info-blotch {
         margin: 0 0px;
         padding: 25px 40px;
+        align-items: center;
       }
 
       #red-blotch {
@@ -356,6 +359,8 @@ body {
         background-size: contain;
         background-repeat: no-repeat;
         transform: rotate(4deg);
+        padding: 10px;
+
 
         & h3::selection {
           background: $purple;
@@ -537,7 +542,7 @@ body {
       margin: auto;
       height: 100%;
       width: auto;
-      transform: rotate(0.5deg) translateX(-20px);
+      transform: rotate(0.5deg) translateX(-30px);
 
       & img {
         height: 70%;
@@ -549,14 +554,15 @@ body {
 
     & .roadmap-text {
       position: relative;
-      width: 60%;
+      max-width: 1000px;
       display: grid;
       grid-template-columns: repeat(2, auto);
       grid-template-rows: repeat(7, auto);
       grid-row-gap: 10px;
-      grid-column-gap: 60px;
+      grid-column-gap: 80px;
       margin-top: 13%;
       padding-bottom: 35%;
+      text-align: center;
       & div h3, div p{
         color: white !important;
       }
@@ -590,7 +596,7 @@ body {
       & div {
         display: flex;
         flex-wrap: wrap;
-        justify-content: start;
+        justify-content: center;
         color: white;
 
         & h3 {
@@ -604,8 +610,8 @@ body {
       }
 
       & .roadmap-left {
-        text-align: right;
-        justify-content: end;
+        text-align: center;
+        justify-content: center;
       }
     }
   }
@@ -666,6 +672,8 @@ body {
 
       & .rank-card-img {
         min-width: 200px;
+        max-width: 300px;
+        max-height: 300px;
         min-height: 200px;
         border-radius: 7px 0 0 7px;
 
@@ -803,7 +811,7 @@ body {
 
     & .faq-box {
       display: grid;
-      grid-template-columns: auto auto;
+      grid-template-columns: auto;
       margin: auto;
       padding: 0 50px;
       max-width: 1000px;
@@ -981,6 +989,7 @@ body {
     top: 0;
     left: 0;
     z-index: 100000000;
+    padding: 20px 20px;
     & .menu-bar {
       z-index: 101;
       width: 100%;
@@ -1017,7 +1026,7 @@ body {
       justify-content: flex-end;
       & .nav-links-mobile {
         top: 100px;
-        right: 50px;
+        right: 20px;
         position: relative;
         text-align: right;
         & p {
@@ -1130,6 +1139,7 @@ body {
   #twitter-button,
   #discord-button {
     margin: 0 10px;
+    color: white;
   }
 
   #twitter-button {
@@ -1232,6 +1242,7 @@ body {
       width: 80%;
       display: flex;
       flex-wrap: wrap;
+      align-items: center;
       justify-content: center;
       font-size: 2em;
 
@@ -1247,6 +1258,7 @@ body {
         background-size: contain;
         background-repeat: no-repeat;
         transform: rotate(2deg);
+        
 
         & h3::selection {
           background: $blue;
@@ -1515,7 +1527,8 @@ body {
       & div {
         display: flex;
         flex-wrap: wrap;
-        justify-content: start;
+        justify-content: center !important;
+        text-align: center !important;
         color: white;
 
         & h3 {
@@ -1662,7 +1675,7 @@ body {
       }
 
       & .team-card {
-        width: 75%;
+        max-width: 278px;
         background-color: white;
         padding: 15px;
         border-radius: 8px;

@@ -50,11 +50,11 @@ h3,
 h4,
 h5,
 h6 {
-  letter-spacing: -0.05em;
+  letter-spacing: -0.0em;
 }
 
 p {
-  letter-spacing: -0.02em;
+  letter-spacing: -0.0em;
 }
 
 body {
@@ -390,11 +390,17 @@ body {
     -ms-flex-pack: center;
     justify-content: center;
     font-size: 2em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .info-container .info-blotches .info-blotch {
     margin: 0 0px;
     padding: 25px 40px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .info-container .info-blotches #red-blotch {
@@ -441,7 +447,8 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     -webkit-transform: rotate(4deg);
-    transform: rotate(4deg);
+            transform: rotate(4deg);
+    padding: 10px;
   }
 
   .info-container .info-blotches #blue-blotch h3::-moz-selection {
@@ -665,8 +672,8 @@ body {
     margin: auto;
     height: 100%;
     width: auto;
-    -webkit-transform: rotate(0.5deg) translateX(-20px);
-    transform: rotate(0.5deg) translateX(-20px);
+    -webkit-transform: rotate(0.5deg) translateX(-30px);
+            transform: rotate(0.5deg) translateX(-30px);
   }
 
   .roadmap-container .roadmap-ufo img {
@@ -680,7 +687,7 @@ body {
 
   .roadmap-container .roadmap-text {
     position: relative;
-    width: 60%;
+    max-width: 1000px;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (auto)[2];
@@ -688,9 +695,10 @@ body {
     -ms-grid-rows: (auto)[7];
     grid-template-rows: repeat(7, auto);
     grid-row-gap: 10px;
-    grid-column-gap: 60px;
+    grid-column-gap: 80px;
     margin-top: 13%;
-    padding-bottom: 20%;
+    padding-bottom: 35%;
+    text-align: center;
   }
 
   .roadmap-container .roadmap-text div h3,
@@ -727,10 +735,12 @@ body {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: start;
+
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+
     color: white;
   }
 
@@ -744,10 +754,11 @@ body {
   }
 
   .roadmap-container .roadmap-text .roadmap-left {
-    text-align: right;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: end;
+
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   /* RANK SECTION */
@@ -825,6 +836,8 @@ body {
 
   .rank-container .rank-card .rank-card-img {
     min-width: 200px;
+    max-width: 300px;
+    max-height: 300px;
     min-height: 200px;
     border-radius: 7px 0 0 7px;
   }
@@ -984,8 +997,9 @@ body {
   .faq-container .faq-box {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: auto auto;
-    grid-template-columns: auto auto;
+
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
     margin: auto;
     padding: 0 50px;
     max-width: 1000px;
@@ -1197,6 +1211,7 @@ body {
     top: 0;
     left: 0;
     z-index: 100000000;
+    padding: 20px 20px;
   }
 
   .nav-mobile .menu-bar {
@@ -1259,7 +1274,7 @@ body {
 
   .nav-mobile .nav-pop .nav-links-mobile {
     top: 100px;
-    right: 50px;
+    right: 20px;
     position: relative;
     text-align: right;
   }
@@ -1427,6 +1442,7 @@ body {
   #twitter-button,
   #discord-button {
     margin: 0 10px;
+    color: white;
   }
 
   #twitter-button {
@@ -1556,7 +1572,11 @@ body {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -1916,10 +1936,11 @@ body {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: start;
+        flex-wrap: wrap;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    text-align: center !important;
     color: white;
   }
 
@@ -2104,7 +2125,7 @@ body {
   }
 
   .team-container .team-box .team-card {
-    width: 75%;
+    max-width: 278px;
     background-color: white;
     padding: 15px;
     border-radius: 8px;
