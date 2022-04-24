@@ -408,9 +408,7 @@ body {
     background-repeat: no-repeat;
     -webkit-transform: rotate(4deg);
             transform: rotate(4deg);
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+    padding: 10px;
   }
   .info-container .info-blotches #blue-blotch h3::-moz-selection {
     background: #AD7CFF;

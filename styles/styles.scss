@@ -359,7 +359,8 @@ body {
         background-size: contain;
         background-repeat: no-repeat;
         transform: rotate(4deg);
-        width: fit-content;
+        padding: 10px;
+
 
         & h3::selection {
           background: $purple;
