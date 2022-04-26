@@ -46,7 +46,7 @@ function changeImg() {
 window.onload = changeImg;
 
 // DISCORD NOT OPEN ALERT
-
+/*
 let btnShow = document.getElementById("nav-discord-button");
 
 btnShow.addEventListener("click", () => {
@@ -64,3 +64,6 @@ btnAlert.addEventListener("click", () => {
     "Continue to Check Our Twitter for Updates 👽"
   );
 });
+*/
+
+// CLOSE BIG SPLOOT CONTAINER //
