@@ -21,6 +21,10 @@ a:visited {
   color: #000000;
 }
 
+.logo-mobile {
+  display: none;
+}
+
 .button-hide {
   display: none;
 }
@@ -66,6 +70,8 @@ body {
   .nav-mobile {
     display: none !important;
   }
+
+
 
   header {
     display: -webkit-box;
@@ -1155,6 +1161,17 @@ body {
   body {
     background-color: #ffdf6f;
     overflow-x: hidden;
+  }
+
+  .logo-loop {
+    display: none !important;
+  }
+
+  .logo-mobile {
+    display: block;
+    width: 70%;
+    margin: auto;
+    padding-bottom: 20px;
   }
 
 
